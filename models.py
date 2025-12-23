@@ -1,10 +1,9 @@
 from pydantic import BaseModel
 
 class Student(BaseModel):
- 
+    student_id: str
     name: str
     age: int
-    dob: str
     email: str
     department: str
-    year: int
+    gender: str
